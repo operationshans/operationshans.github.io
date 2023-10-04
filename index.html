@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vibration Control</title>
+</head>
+<body>
+    <h1>Vibration Control</h1>
+    <label for="vibrationCount">Enter the number of vibrations:</label>
+    <input type="number" id="vibrationCount" />
+    <button onclick="vibrate()">Vibrate</button>
+
+    <script>
+        function vibrate() {
+            const count = parseInt(document.getElementById("vibrationCount").value);
+            navigator.vibrate(count * 500); // Vibrate for the specified number of milliseconds
+        }
+    </script>
+</body>
+</html>
